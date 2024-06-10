@@ -124,7 +124,7 @@ def run_validation(model, validation_ds, tokenizer_src, tokenizer_tgt, max_len, 
             _, console_width = console.read().split()
             console_width = int(console_width)
     except:
-        # If we can't get the console width, use 80 as default
+        # If we can't get the console width, 80 as default
         console_width = 80
 
     with torch.no_grad():

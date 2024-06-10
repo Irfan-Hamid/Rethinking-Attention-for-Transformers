@@ -65,7 +65,7 @@ from nltk.util import ngrams
 
 
 def set_seed(seed_value):
-    """Set seed for reproducibility."""
+    """Set seed (reproducibility)."""
     random.seed(seed_value)
     np.random.seed(seed_value)
     torch.manual_seed(seed_value)

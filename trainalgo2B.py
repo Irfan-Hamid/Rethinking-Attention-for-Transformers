@@ -283,7 +283,7 @@ def train_model_causal_mask(config,current_epoch, model, device, num_epochs):
     elif (device == 'mps'):
         print(f"Device name: <mps>")
     else:
-        print("NOTE: If you have a GPU, consider using it for training.")
+        print("NOTE: If you have a GPU, consider using for training.")
     device = torch.device(device)
 
     # Make sure the weights folder exists

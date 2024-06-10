@@ -179,7 +179,7 @@ def greedy_decode_whole(model_causal_mask, model_causal_mask_with_future, source
         refinement_prob = model_causal_mask_with_future.project(refinement_out[:, -3])  # Get probabilities for the token before the last
         _, refined_word = torch.max(refinement_prob, dim=1)
 
-        decoder_input[:, i+1] = refined_word  # Update the current token with the refined prediction
+        decoder_input[:, i+1] = refined_word  # Update current token with the refined prediction
 
     return decoder_input.squeeze(0)
 
