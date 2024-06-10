@@ -7,7 +7,7 @@ class LayerNormalization(nn.Module):
     def __init__(self, features: int, eps:float=10**-6) -> None:
         super().__init__()
         self.eps = eps
-        self.alpha = nn.Parameter(torch.ones(features)) # alpha is a learnable parameter
+        self.alpha = nn.Parameter(torch.ones(features)) # alpha is  learnable parameter
         self.bias = nn.Parameter(torch.zeros(features)) # bias is a learnable parameter
 
     def forward(self, x):
