@@ -2,7 +2,7 @@ Setup and Installation
 ----------------------
 To run this project in Google Colab, follow these steps to set up the environment:
 
-1. Open a new Google Colab notebook.
+1. Open a new Google Colab notebook
 
 2. Install the required libraries by running the following commands in code cells:
 
